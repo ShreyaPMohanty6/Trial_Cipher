@@ -182,20 +182,20 @@
             withLoader
             on:click={() => console.log('Handle authentication...')}
 
-<!--    {/if}-->
+    {/if}
 
 
-<!--<div style="justify-content: center;align-items: center;display: flex;">-->
-<!--    <h2>Get Ready to Rumble!</h2>-->
+<div style="justify-content: center;align-items: center;display: flex;">
+    <h2>Get Ready to Rumble!</h2>
 
-<!--</div>-->
-<!--<div style="justify-content: center;align-items: center;display: flex">-->
-<!--    <ul class="steps">-->
-<!--        <li class="step" class:step-success={accState === AccountState.SET || accState === AccountState.GO || accState === AccountState.DONE} />-->
-<!--        <li class="step" class:step-success={accState === AccountState.GO || accState === AccountState.DONE} />-->
-<!--        <li class="step" class:step-success={accState === AccountState.DONE} />-->
-<!--    </ul>-->
-<!--</div>-->
+</div>
+<div style="justify-content: center;align-items: center;display: flex">
+    <ul class="steps">
+        <li class="step" class:step-success={accState === AccountState.SET || accState === AccountState.GO || accState === AccountState.DONE} />
+        <li class="step" class:step-success={accState === AccountState.GO || accState === AccountState.DONE} />
+        <li class="step" class:step-success={accState === AccountState.DONE} />
+    </ul>
+</div>
 <h2 class="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text py-4 text-center text-7xl font-medium tracking-tight text-transparent">
     get ready to rumble
 </h2>
