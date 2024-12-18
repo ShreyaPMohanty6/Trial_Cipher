@@ -175,13 +175,13 @@
 </script>
 
 
-<!--{#if data.userID === null}-->
-<!--    <LoginButton-->
-<!--            provider="google"-->
-<!--            loading-->
-<!--            withLoader-->
-<!--            on:click={() => console.log('Handle authentication...')}-->
-<!--    />-->
+{#if data.userID === null}
+    <LoginButton
+            provider="google"
+            loading
+            withLoader
+            on:click={() => console.log('Handle authentication...')}
+
 <!--    {/if}-->
 
 
