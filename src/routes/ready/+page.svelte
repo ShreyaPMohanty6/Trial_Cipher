@@ -38,8 +38,8 @@
      }
 
     $: accState = getAccountStateFromStatCode(data);
-    // $: accState = data.userID === null ?
-    //     AccountState.GOOGLE_SIGN_IN : (data.userExists === false ? AccountState.USERNAME_NAME : (data.userTeam === undefined ? AccountState.TEAM_SELECT : AccountState.DONE))
+     $: accState = data.userID === null ?
+         AccountState.GOOGLE_SIGN_IN : (data.userExists === false ? AccountState.USERNAME_NAME : (data.userTeam === undefined ? AccountState.TEAM_SELECT : AccountState.DONE))
     $: progVal = accState === AccountState.GOOGLE_SIGN_IN ? 0 : (accState === AccountState.USERNAME_NAME ? 33.3 : (accState === AccountState.TEAM_SELECT ? 66.6 : 100))
     async function signInWithGoogle() {
         isAuthLoading = true;
@@ -181,8 +181,8 @@
             loading
             withLoader
             on:click={() => console.log('Handle authentication...')}
-
-    {/if}
+    />
+{/if}
 
 
 <div style="justify-content: center;align-items: center;display: flex;">
