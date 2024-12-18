@@ -302,7 +302,7 @@
 <BackgroundBeams/>
 
 <!-- You can open the modal using ID.showModal() method -->
-<!--<button class="btn" onclick="my_modal_3.showModal()">open modal</button>-->
+<button class="btn" onclick="my_modal_3.showModal()">open modal</button>
 <dialog id="create_team_modal" class="modal">
     <div class="modal-box">
         <form method="dialog">
@@ -344,6 +344,6 @@
     </div>
 </dialog>
 
-<!--<button class="btn relative" on:click={signoutSSR}>-->
-<!--    log out-->
-<!--</button>-->
+<button class="btn relative" on:click={signoutSSR}>
+    log out
+</button>
